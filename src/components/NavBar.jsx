@@ -2,6 +2,7 @@ import "../styles/NavBar.css"
 import ProfileImg from '../assets/kakashi.jpg';
 import { Outlet } from 'react-router-dom'
 import { useState } from 'react'
+import ThemeSwitcher from './ThemeSwitcher'
 
 export default function NavBar(){
 
@@ -69,6 +70,8 @@ export default function NavBar(){
             <span className="tooltip">Contact</span>
           </li>
 
+          <ThemeSwitcher />
+
         </ul>
 
         <div className="profile_content">
@@ -85,7 +88,7 @@ export default function NavBar(){
           </div>
         </div>
       </div>
-      <div className="Content">
+      <div className="nav-Content">
         <Outlet />
       </div>
     </>

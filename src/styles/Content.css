@@ -1,0 +1,9 @@
+.content{
+	overflow: scroll;
+}
+.home-section{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../assets/bg-texture2.png);
+	background-color: var(--color1);
+}

@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import NavBar from "./components/NavBar"
+import Content from "./components/Content"
 
 const router = createBrowserRouter([
     {
@@ -7,7 +8,7 @@ const router = createBrowserRouter([
       children: [
           {
             path: '/',
-            element: <h1>Hellow</h1>,
+            element: <Content />,
           },
         ]
     }
