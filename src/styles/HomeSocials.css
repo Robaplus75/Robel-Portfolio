@@ -1,0 +1,45 @@
+.home_socials{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.8rem;
+	position: absolute;
+	right: 5%;
+	bottom: 3rem;
+}
+
+.home_socials a{
+	color: var(--color2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	border-radius: 12px;
+	transition: all 0.3s ease ;
+	white-space: nowrap;
+}
+
+.home_socials a:hover{
+	background: var(--color2);
+	color: var(--color1);
+}
+
+
+.home_socials a{
+	height: 50px;
+	min-width: 50px;
+	border-radius: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.home_socials a .social-icon{
+	font-size: 23px;
+}
+
+.home_socials::after{
+	content: "";
+	width: 2px;
+	height: 3rem;
+	background: var(--color3);
+}
