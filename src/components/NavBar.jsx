@@ -29,14 +29,14 @@ export default function NavBar(){
 
         <ul class="nav_list">
           <li>
-            <a href="#">
+            <a href="#home">
               <i class='bx bx-home' ></i>
               <span className="links_name">Home</span>
             </a>
             <span className="tooltip">Home</span>
           </li>
           <li>
-            <a href="#">
+            <a href="#about">
               <span className="nav-mobile links_name">About</span>
               <i class='bx bx-help-circle' ></i>
               <span className="nav-desktop links_name">About</span>
@@ -51,7 +51,7 @@ export default function NavBar(){
             <span className="tooltip">Services</span>
           </li>
           <li>
-            <a href="#">
+            <a href="#skills">
               <span className="nav-mobile links_name">Skills</span>
               <i class='bx bx-pie-chart-alt-2' ></i>
               <span className="nav-desktop links_name">Skills</span>

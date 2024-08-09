@@ -1,0 +1,141 @@
+.skills{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	color: var(--color2);
+	width: 100%;
+}
+.skills-title{
+	font-weight: bold;
+	font-size: 2rem;
+}
+.skills-container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.card{
+	position: relative;
+	width: 320px;
+	height: 450px;
+	margin: 30px;
+	border-radius: 20px;
+	border-bottom-left-radius: 160px;
+	border-bottom-right-radius: 160px;
+	background-color: var(--color3);
+	box-shadow: 0 15px rgba(0, 0, 0, 0.35);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.card::before{
+	content: '';
+	position: absolute;
+	top: -140px;
+	left: -40%;
+	width: 100%;
+	height: 120%;
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2));
+	transform: rotate(35deg);
+	pointer-events: none;
+	filter: blur(5px);
+}
+.card:nth-child(1){
+	background: linear-gradient(to bottom, var(--color2), var(--color1));
+}
+.card:nth-child(2){
+	background: linear-gradient(to bottom, var(--color2), var(--color1));
+}
+.card:nth-child(3){
+	background: linear-gradient(to bottom, var(--color2), var(--color1));
+}
+
+.card-icon{
+	position: relative;
+	width: 140px;
+	height: 120px;
+	background: var(--color1);
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	box-shadow: 0 10px rgba(0, 0, 0, 0.35);
+	display: inline-flex;
+	justify-content: center;
+
+}
+
+.card-icon::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -50px;
+	width: 50px;
+	height: 50px;
+	background:transparent;
+	border-top-right-radius: 50px;
+	box-shadow: 15px -15px 0 15px var(--color1);
+}
+
+.card-icon::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -50px;
+	width: 50px;
+	height: 50px;
+	background:transparent;
+	border-top-left-radius: 50px;
+	box-shadow: -15px -15px 0 15px var(--color1);
+}
+
+.card-icon i{
+	color: var(--color3);
+	position: relative;
+	font-size: 6em;
+	z-index: 101;
+}
+
+
+.skill-bar .info{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+
+.skill-bar .info{
+	font-weight: bold;
+}
+
+.skill-bar .bar{
+	width: 100%;
+	height: 10px;
+	background: var(--color3);
+	border-radius: 25px;
+	margin-top: 5px;
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	padding: 0 3px;
+	align-items: center;
+}
+
+.skill-bar .bar span{
+	width: 50%;
+	height: 8px;
+	background-color: var(--color1);
+	border-radius: 25px;
+}
+
+.skill-bar .bar .rest-api{
+	width: 80%;
+	animation: django 3s;
+}
+.skill-bar .bar .jwt-auths{
+	width: 75%;
+	animation: django 3s;
+}
+.skill-bar .bar .djangos-orm{
+	width: 85%;
+	animation: django 3s;
+}
