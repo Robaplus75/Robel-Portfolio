@@ -26,7 +26,7 @@
 }
 
 .glass .left{
-	flex: 1;
+	flex: 1.7;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -41,6 +41,9 @@
 }
 .glass .right .me img{
 	width:100%;
+}
+.glass .left .home-info{
+	
 }
 
 .glass .left .home-info .cta{
@@ -64,6 +67,7 @@
 	cursor: pointer;
 	border: 1px solid var(--color3);
 	transition: all 0.3s ease;
+	z-index: 1;
 }
 .btn:hover{
 	background: var(--color3);
@@ -110,4 +114,36 @@
 
 .custom-shape-divider-bottom-1723142061 .shape-fill {
     fill: var(--color3);
+}
+
+
+/*------- Medium Screen ------*/
+@media screen and (max-width:1024px){
+	.home{
+	}
+	.glass{
+		width: 90%;
+		height: 90%;
+	}
+	.greeting{
+		font-size: 1.5rem;
+	}
+	.myname{
+		font-size: 2.5rem;
+	}
+	.occupation{
+		font-size: 1rem;
+	}
+
+}
+
+/*------- Small Screen ------*/
+@media screen and (max-width:830px){
+	.home{
+		
+	}
+	.glass{
+		padding: 50px;
+		flex-direction: column;
+	}
 }

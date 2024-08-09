@@ -7,7 +7,7 @@ export default function Content(){
 			<section className="home-section">
 				<Home />
 			</section>
-			<section>
+			<section className="about-section">
 				<h1>Stuff Here</h1>
 			</section>
 		</div>

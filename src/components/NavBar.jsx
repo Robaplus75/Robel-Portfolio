@@ -22,9 +22,10 @@ export default function NavBar(){
             <i class='bx bx-user-circle' ></i>
             <div className="logo_name">Robel</div>
           </div>
-          <i class='bx bx-menu' id="btn" onClick={menu_btn} ></i>
 
         </div>
+
+        <i class='bx bx-menu' id="btn" onClick={menu_btn} ></i>
 
         <ul class="nav_list">
           <li>
@@ -36,8 +37,9 @@ export default function NavBar(){
           </li>
           <li>
             <a href="#">
+              <span className="nav-mobile links_name">About</span>
               <i class='bx bx-help-circle' ></i>
-              <span className="links_name">About</span>
+              <span className="nav-desktop links_name">About</span>
             </a>
             <span className="tooltip">About</span>
           </li>
@@ -50,8 +52,9 @@ export default function NavBar(){
           </li>
           <li>
             <a href="#">
+              <span className="nav-mobile links_name">Skills</span>
               <i class='bx bx-pie-chart-alt-2' ></i>
-              <span className="links_name">Skills</span>
+              <span className="nav-desktop links_name">Skills</span>
             </a>
             <span className="tooltip">Skills</span>
           </li>
@@ -64,8 +67,11 @@ export default function NavBar(){
           </li>
           <li>
             <a href="#">
+              <span className="nav-mobile links_name">Contact</span>
               <i class='bx bxs-contact' ></i>
-              <span className="links_name">Contact</span>
+              <span className="nav-desktop links_name">Contact</span>
+              
+
             </a>
             <span className="tooltip">Contact</span>
           </li>
