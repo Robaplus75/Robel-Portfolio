@@ -121,10 +121,6 @@
 @media screen and (max-width:1024px){
 	.home{
 	}
-	.glass{
-		width: 90%;
-		height: 90%;
-	}
 	.greeting{
 		font-size: 1.5rem;
 	}
@@ -141,6 +137,10 @@
 @media screen and (max-width:830px){
 	.home{
 		
+	}
+	.glass{
+		width: 90%;
+		height: 90%;
 	}
 	.glass{
 		padding: 50px;

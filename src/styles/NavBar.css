@@ -266,9 +266,15 @@
 	}
 
 	.sidebar ul li{
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		height: 100%;
 		z-index: 101;
 		margin: 0;
+		width: 40px;
+	}
+	.sidebar.active ul li{
 		width: 14.28%;
 	}
 

@@ -1,7 +1,7 @@
 import "../styles/Content.css"
-import Home from "./Home"
-import About from "./About"
-import Skills from "./Skills"
+import Home from "./Home/Home"
+import About from "./About/About"
+import Skills from "./Skills/Skills"
 
 export default function Content(){
 	return (

@@ -1,4 +1,4 @@
-import "../styles/HomeSocials.css"
+import "../../styles/HomeSocials.css"
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
