@@ -17,6 +17,11 @@ const themes = [
     '--color2': '#FCF951FF',
     '--color3': '#FCF951FF',
   },
+  {
+    '--color1': 'black',
+    '--color2': 'white',
+    '--color3': 'white',
+  },
 ];
 
 export default function ThemeSwitcher() {
@@ -35,7 +40,7 @@ export default function ThemeSwitcher() {
 
   return (
   		<li onClick={toggleTheme}>
-            <a href="#">
+            <a>
               <span className="space"></span>
               <i class='bx bx-palette' ></i>
               <span className="links_name">Theme</span>
