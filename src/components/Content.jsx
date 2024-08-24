@@ -2,6 +2,7 @@ import "../styles/Content.css"
 import Home from "./Home/Home"
 import About from "./About/About"
 import Skills from "./Skills/Skills"
+import Contact from "./Contact/Contact"
 
 export default function Content(){
 	return (
@@ -14,6 +15,9 @@ export default function Content(){
 			</section>
 			<section id="skills" className="skills-section">
 				<Skills />
+			</section>
+			<section id="contact" className="contact-section">
+				<Contact />
 			</section>
 		</div>
 		)

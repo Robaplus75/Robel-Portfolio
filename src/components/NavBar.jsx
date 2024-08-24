@@ -66,7 +66,7 @@ export default function NavBar(){
             <span className="tooltip">Projects</span>
           </li>
           <li>
-            <a href="#">
+            <a href="#contact">
               <span className="nav-mobile links_name">Contact</span>
               <i class='bx bxs-contact' ></i>
               <span className="nav-desktop links_name">Contact</span>

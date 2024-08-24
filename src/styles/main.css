@@ -24,6 +24,7 @@
     --color2: #FCF951FF;
     --color3: #FCF951FF;*/
 
+    --bgimage1: url(../assets/bg-texture2.png);
 
 
     --width-sidebar: 240px;
@@ -34,6 +35,6 @@ body{
 	position: relative;
 	min-height: 100vh;
 	width: 100%;
-    background-image: url(../assets/bg-texture2.png);
+    background-image: var(--bgimage1);
     background-color: var(--color1);
 }

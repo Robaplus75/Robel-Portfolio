@@ -21,7 +21,7 @@ export default function Home(){
 				</div>
 				<div className="right">
 					<div className="me">
-						<img src={ME} alt="me" />
+						{/*<img src={ME} alt="me" />*/}
 					</div>
 				</div>
 

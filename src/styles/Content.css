@@ -13,24 +13,17 @@
 	width: 100%;
 	min-height: 100vh;
 }
-.card-content{
-	position: absolute;
+
+.contact-section{
 	width: 100%;
-	padding:30px;
-	padding-top: 140px;
-	text-align: center;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.card-content h2{
-	font-size: 1.75rem;
-	content: white;
-	margin-bottom: 10px;
-}
-.card-content p{
-	color: white;
-	line-height: 1.5em;
-}
+
 @media screen and (max-width:830px){
-	.home-section, .about-section, .skills-section{
+	.home-section, .about-section, .skills-section, .contact-section{
 		padding-top: var(--width-sidebar-deactivated);
 	}
 }
