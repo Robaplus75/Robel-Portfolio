@@ -1,6 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 import NavBar from "./components/NavBar"
 import Content from "./components/Content"
+import LoadingBar from "./components/LoadingBar"
 
 const router = createBrowserRouter([
     {
@@ -14,12 +16,23 @@ const router = createBrowserRouter([
     }
   ])
 
+const Router = () => {
+  const [isLoading, setIsLoading] = useState(true);
 
-function Router() {
+  const handleLoading = () => {
+  setIsLoading(false);
+  }
 
-  return (
-    <RouterProvider router={router} />
-  )
+  useEffect(()=>{
+  window.addEventListener("load",handleLoading);
+  return () => window.removeEventListener("load",handleLoading);
+  },[])
+
+  return !isLoading ? (
+  <RouterProvider router={router} />
+  ):(<LoadingBar />)
+
 }
+
 
 export default Router
