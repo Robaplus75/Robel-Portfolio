@@ -9,6 +9,10 @@
 	width: 100%;
 	min-height: 100vh;
 }
+.services-section{
+	min-height: 100vh;
+	width: 100%;
+}
 .skills-section{
 	width: 100%;
 	min-height: 100vh;
@@ -23,7 +27,7 @@
 }
 
 @media screen and (max-width:830px){
-	.home-section, .about-section, .skills-section, .contact-section{
+	.home-section, .about-section, .services-section, .skills-section, .contact-section{
 		padding-top: var(--width-sidebar-deactivated);
 	}
 }

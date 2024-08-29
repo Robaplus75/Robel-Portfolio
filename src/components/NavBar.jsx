@@ -44,7 +44,7 @@ export default function NavBar(){
             <span className="tooltip">About</span>
           </li>
           <li>
-            <a href="#">
+            <a href="#services">
               <i class='bx bx-command' ></i>
               <span className="links_name">Services</span>
             </a>
