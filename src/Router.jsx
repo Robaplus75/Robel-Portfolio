@@ -17,20 +17,21 @@ const router = createBrowserRouter([
   ])
 
 const Router = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  const handleLoading = () => {
-  setIsLoading(false);
-  }
+  // const handleLoading = () => {
+  // setIsLoading(false);
+  // }
 
-  useEffect(()=>{
-  window.addEventListener("load",handleLoading);
-  return () => window.removeEventListener("load",handleLoading);
-  },[])
+  // useEffect(()=>{
+  // window.addEventListener("load",handleLoading);
+  // return () => window.removeEventListener("load",handleLoading);
+  // },[])
 
-  return !isLoading ? (
-  <RouterProvider router={router} />
-  ):(<LoadingBar />)
+  // return !isLoading ? (
+  // <RouterProvider router={router} />
+  // ):(<LoadingBar />)
+  return <RouterProvider router={router} />
 
 }
 
