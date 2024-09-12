@@ -37,4 +37,20 @@ body{
 	width: 100%;
     background-image: var(--bgimage1);
     background-color: var(--color1);
+
+}
+
+.intro-title{
+    color: var(--color3);
+    font-size: 2rem;
+}
+
+.intro-paragraph{
+    font-size: 1rem;
+/*    color: var(--color2);*/
+    color: white;
+    text-align: center;
+    line-height: 1.5rem;
+    white-space: 1px;
+    text-transform: uppercase;
 }

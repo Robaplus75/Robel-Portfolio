@@ -26,6 +26,10 @@
 	align-items: center;
 }
 
+.content{
+
+}
+
 @media screen and (max-width:830px){
 	.home-section, .about-section, .services-section, .skills-section, .contact-section{
 		padding-top: var(--width-sidebar-deactivated);
