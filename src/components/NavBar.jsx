@@ -59,7 +59,7 @@ export default function NavBar(){
             <span className="tooltip">Skills</span>
           </li>
           <li>
-            <a href="#">
+            <a href="#projects">
               <i class='bx bx-desktop' ></i>
               <span className="links_name">Projects</span>
             </a>

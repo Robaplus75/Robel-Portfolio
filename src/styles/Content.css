@@ -8,6 +8,7 @@
 .about-section{
 	width: 100%;
 	min-height: 100vh;
+	padding: 50px 8%;
 }
 .services-section{
 	min-height: 100vh;
@@ -16,6 +17,13 @@
 .skills-section{
 	width: 100%;
 	min-height: 100vh;
+}
+.projects-section{
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .contact-section{

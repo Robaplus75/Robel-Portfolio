@@ -41,33 +41,32 @@ export default function Skills(){
 		];
 
 	const backend_skills = [
-			{
+		  {
 		    icon: <i class='bx bxl-django'></i>,
 		    title: "DJANGO",
 		    description: "",
 		    bars: [
-					{percent:80, name:"Rest APIs"},
-					{percent:75, name:"JWT Auths"},
-					{percent:85, name:"Django's ORM"},
-				]
-				
+		      { status: "Excellent", name: "Rest APIs" },
+		      { status: "Good", name: "JWT Auths" },
+		      { status: "Excellent", name: "Django's ORM" },
+		    ]
 		  },
 		  {
 		    icon: <i className='bx bxl-flask' />,
 		    title: "Flask",
 		    description: "",
 		    bars: [
-					{percent:80, name:"CRUD"},
-					{percent:50, name:"Session Auths"},
-					{percent:65, name:"SQLAlchemy ORM"},
-				],
+		      { status: "Excellent", name: "CRUD" },
+		      { status: "Fair", name: "Session Auths" },
+		      { status: "Good", name: "SQLAlchemy ORM" },
+		    ],
 		  },
 		]
 
 	const settings = {
 		dots: false,
 		infinite:false,
-		speed: 500,
+		speed: 300,
 		slidesToShow:1,
 		slidesToScroll:1,
 		
@@ -78,42 +77,61 @@ export default function Skills(){
 		<div className="skills">
 			<h2 className="intro-title">Skills</h2>
 			<p className="intro-paragraph">Below are some of my key skills, categorized into frontend and backend.</p>
+			<div className="skills-list">
+				<div className="frontend-skills">
+					<div className="skills-title">My Frontend Skills</div>
 
-			<div className="frontend-skills">
-				<div className="skills-title">My Frontend Skills</div>
+					<div className="skills-container">
+					<Slider {...settings}>
+					  {frontend_skills.map((skill, index) => (
+					    <Card
+					      key={index}
+					      icon={skill.icon}
+					      title={skill.title}
+					      description={skill.description}
+					      bars={skill.bars}
+					    />
+					  ))}
+					</Slider>
+					</div>
 
-				<div className="skills-container">
-				<Slider {...settings}>
-				  {frontend_skills.map((skill, index) => (
-				    <Card
-				      key={index}
-				      icon={skill.icon}
-				      title={skill.title}
-				      description={skill.description}
-				      bars={skill.bars}
-				    />
-				  ))}
-				</Slider>
 				</div>
 
-			</div>
+	{/*----------------Backend Skills -------------*/}
+				<div className="backend-skills">
+					<div className="skills-title">My Backend Skills</div>
 
-{/*----------------Backend Skills -------------*/}
-			<div className="backend-skills">
-				<div className="skills-title">My Backend Skills</div>
+					<div className="skills-container">
+					<Slider {...settings}>
+					  {backend_skills.map((skill, index) => (
+					    <Card
+					      key={index}
+					      icon={skill.icon}
+					      title={skill.title}
+					      description={skill.description}
+					      bars={skill.bars}
+					    />
+					  ))}
+					</Slider>
+					</div>
+				</div>
+	{/*----------------Backend Skills -------------*/}
+				<div className="devops-skills">
+					<div className="skills-title">My Backend Skills</div>
 
-				<div className="skills-container">
-				<Slider {...settings}>
-				  {backend_skills.map((skill, index) => (
-				    <Card
-				      key={index}
-				      icon={skill.icon}
-				      title={skill.title}
-				      description={skill.description}
-				      bars={skill.bars}
-				    />
-				  ))}
-				</Slider>
+					<div className="skills-container">
+					<Slider {...settings}>
+					  {backend_skills.map((skill, index) => (
+					    <Card
+					      key={index}
+					      icon={skill.icon}
+					      title={skill.title}
+					      description={skill.description}
+					      bars={skill.bars}
+					    />
+					  ))}
+					</Slider>
+					</div>
 				</div>
 			</div>
 

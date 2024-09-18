@@ -4,6 +4,7 @@ import About from "./About/About"
 import Skills from "./Skills/Skills"
 import Contact from "./Contact/Contact"
 import Services from "./Services/Services"
+import Projects from "./Projects/Projects"
 
 export default function Content(){
 	return (
@@ -19,6 +20,9 @@ export default function Content(){
 			</section>
 			<section id="skills" className="skills-section">
 				<Skills />
+			</section>
+			<section id="projects" className="projects-section">
+				<Projects />
 			</section>
 			<section id="contact" className="contact-section">
 				<Contact />

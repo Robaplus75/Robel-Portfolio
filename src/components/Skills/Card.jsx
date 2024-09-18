@@ -1,4 +1,7 @@
 export default function Card({icon, title, description, bars}){
+	// <div class="bar">
+	// 	<span style={{'width':`${bar.percent}%`}}></span>
+	// </div>
 	return (
 					<div class="card">
 						<div class="card-icon">
@@ -9,13 +12,8 @@ export default function Card({icon, title, description, bars}){
 							<p>{description}</p>
 							{bars.map((bar)=>(
 								<div className='skill-bar'>
-									<div class="info">
-										<p>{bar.name}</p>
-										<p className="percent">{bar.percent}%</p>
-									</div>
-									<div class="bar">
-										<span style={{'width':`${bar.percent}%`}}></span>
-									</div>
+									<p>{bar.name}</p>
+									<p className="skill-status">{bar.status}</p>
 								</div>
 							))}
 							

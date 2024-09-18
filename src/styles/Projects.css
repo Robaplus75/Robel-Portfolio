@@ -1,0 +1,66 @@
+.projects-container{
+	color: var(--color2);
+	width: 80%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+}
+
+.project-info{
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 20px;
+	border: 3px solid var(--color3);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+	width: 450px;
+	height: 300px;
+	position: absolute;
+	top: 8%;
+	left: 70%;
+	z-index: 1;
+	padding: 20px;
+}
+.project-img{
+	position: relative;
+	width: 500px;
+	height: 420px;
+	margin-left: 130px;
+}
+.project-img .image-slider{
+	width: 100%;
+	height: 100%;
+}
+.project-img .image-slider .swiper-wrapper{
+	height: 85%;
+}
+
+.project-img img{
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	border-radius: 12px;
+}
+
+.slider-btn{
+	height: 15%;
+	display: flex;
+	font-size: 30px;
+}
+.slider-btn div{
+	background-color: var(--color1);
+	height: 80%;
+	padding: 0 10px;
+	margin: 0 5px;
+	margin-top: 5px;
+	color: var(--color3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+.slider-btn div:hover{
+	background-color: var(--color3);
+	color: var(--color1);
+}

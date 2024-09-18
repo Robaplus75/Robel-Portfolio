@@ -232,7 +232,7 @@
 @media screen and (max-width:830px){
 	.sidebar{
 		height: var(--width-sidebar-deactivated);
-		width: 100%;
+		width: 100vw;
 		display: flex;
 		align-items: center;
 		justify-content: space-around;

@@ -24,7 +24,8 @@
     --color2: #FCF951FF;
     --color3: #FCF951FF;*/
 
-    --bgimage1: url(../assets/bg-texture2.png);
+    --bgimage1: url(../assets/bg-image1.jpg);
+/*    --bgimage1: url(../assets/bg-image2.jpg);*/
 
 
     --width-sidebar: 240px;
@@ -42,15 +43,22 @@ body{
 
 .intro-title{
     color: var(--color3);
-    font-size: 2rem;
+
 }
 
 .intro-paragraph{
-    font-size: 1rem;
+/*    font-size: 1rem;*/
 /*    color: var(--color2);*/
-    color: white;
+    /*color: white;
     text-align: center;
     line-height: 1.5rem;
     white-space: 1px;
+    text-transform: uppercase;*/
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 14px 0px 15px;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
 }
