@@ -8,7 +8,6 @@
 	padding: 6px 14px;
 	transition: all 0.2s ease;
 	z-index: 2;
-
 }
 
 .sidebar.active{
@@ -221,6 +220,8 @@
 	left: var(--width-sidebar-deactivated);
 	transition: all 0.5s ease;
 	z-index: 0;
+	display: flex;
+	justify-content: center;
 }
 
 .sidebar.active ~ .nav-Content{
@@ -239,31 +240,38 @@
 
 	}
 	.sidebar.active{
-		height: var(--width-sidebar-deactivated);
-		width: 100%;
+		display: block;
+		height: 100vh;
+		width: var(--width-sidebar);
 	}
 
 	.sidebar #btn{
 		position: static;
-
+		z-index: 10000;
 		text-align: center;
 		line-height: 50px;
 		cursor: pointer;
 		margin-left: 15px;
 	}
 	.sidebar.active #btn{
-		left: 10px;
+		position: absolute;
+		left: 90%;
 		top: 6px;
+		margin-left: 0;
 	}
 
 	.sidebar ul{
 		position: static;
 		display: flex;
 		margin: 0;
-
 	}
 	.sidebar.active ul{
-		width: 100%;
+		display: block;
+		margin-top: 20px;
+	}
+
+	ul .theme-btn{
+		display: none;
 	}
 
 	.sidebar ul li{
@@ -277,9 +285,19 @@
 	}
 	.sidebar.active ul li{
 		width: 14.28%;
+		display: block;
+		height: 50px;
+		margin: 0 5px;
+		width: 100%;
+	}
+	.sidebar ul li i{
+		font-size: 15px;
 	}
 
 	.sidebar ul li .tooltip{
+		display: none;
+	}
+	.sidebar.active ul li .tooltip{
 		display: none;
 	}
 
@@ -289,25 +307,25 @@
 	}
 	.sidebar.active .links_name{
 		display: block;
-		font-size: 15px;
-		font-weight: bold;
+		opacity: 1;
+		pointer-events: auto;
 	}
 
-	.sidebar.active .nav-desktop{
+	/*.sidebar.active .nav-desktop{
 		display: none;
 	}
 	.sidebar.active ul li a .nav-mobile{
 		display: block;
-	}
+	}*/
 	.sidebar ul li a .nav-desktop{
 		display: none;
 	}
 
-	.sidebar.active ul li span{
+	/*.sidebar.active ul li span{
 		line-height: 30px;
-	}
+	}*/
 
-	.sidebar.active ul li i{
+	/*.sidebar.active ul li i{
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -316,17 +334,18 @@
 		border-radius: 50px;
 		line-height: 50px;
 		text-align: center;
-	}
+	}*/
 
 	.sidebar ul li a{
 		padding: 0px;
 		transition: all 0.4s ease;
 	}
-	.sidebar ul li a .span{
-		background-color: green;
-	}
 
-	.sidebar.active ul li a{
+	/*.sidebar ul li a .span{
+		background-color: green;
+	}*/
+
+	/*.sidebar.active ul li a{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -335,7 +354,7 @@
 		border-radius: 12px;
 		transition: all 0.3s ease ;
 		white-space: nowrap;
-	}
+	}*/
 
 
 	.nav-Content{
@@ -346,7 +365,6 @@
 		top: var(--width-sidebar-deactivated);
 		transition: all 0.5s ease;
 		z-index: 0;
-
 	}
 	.sidebar.active ~ .nav-Content{
 		width: 100%;

@@ -11,6 +11,11 @@ export default function NavBar(){
   const menu_btn = ()=>{
     setMenuActive(!menuActive)
   }
+  const menu_btn_down = ()=>{
+    if(menuActive){
+      setMenuActive(!menuActive)
+    }
+  }
 
   return (
       <>
@@ -29,45 +34,42 @@ export default function NavBar(){
 
         <ul class="nav_list">
           <li>
-            <a href="#home">
+            <a href="#home" onClick={menu_btn_down}>
               <i class='bx bx-home' ></i>
               <span className="links_name">Home</span>
             </a>
             <span className="tooltip">Home</span>
           </li>
           <li>
-            <a href="#about">
-              <span className="nav-mobile links_name">About</span>
+            <a href="#about" onClick={menu_btn_down}>
               <i class='bx bx-help-circle' ></i>
               <span className="nav-desktop links_name">About</span>
             </a>
             <span className="tooltip">About</span>
           </li>
           <li>
-            <a href="#services">
+            <a href="#services" onClick={menu_btn_down}>
               <i class='bx bx-command' ></i>
               <span className="links_name">Services</span>
             </a>
             <span className="tooltip">Services</span>
           </li>
           <li>
-            <a href="#skills">
-              <span className="nav-mobile links_name">Skills</span>
+            <a href="#skills" onClick={menu_btn_down}>
               <i class='bx bx-pie-chart-alt-2' ></i>
               <span className="nav-desktop links_name">Skills</span>
             </a>
             <span className="tooltip">Skills</span>
           </li>
           <li>
-            <a href="#projects">
+            <a href="#projects" onClick={menu_btn_down}>
               <i class='bx bx-desktop' ></i>
               <span className="links_name">Projects</span>
             </a>
             <span className="tooltip">Projects</span>
           </li>
           <li>
-            <a href="#contact">
-              <span className="nav-mobile links_name">Contact</span>
+            <a href="#contact" onClick={menu_btn_down}>
               <i class='bx bxs-contact' ></i>
               <span className="nav-desktop links_name">Contact</span>
               

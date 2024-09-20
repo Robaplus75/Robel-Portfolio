@@ -41,9 +41,8 @@ export default function ThemeSwitcher() {
   };
 
   return (
-  		<li onClick={toggleTheme}>
+  		<li className="theme-btn" onClick={toggleTheme}>
             <a>
-              <span className="space"></span>
               <i class='bx bx-palette' ></i>
               <span className="links_name">Theme</span>
             </a>

@@ -117,7 +117,7 @@ export default function Skills(){
 				</div>
 	{/*----------------Backend Skills -------------*/}
 				<div className="devops-skills">
-					<div className="skills-title">My Backend Skills</div>
+					<center><div className="skills-title">My Backend Skills</div></center>
 
 					<div className="skills-container">
 					<Slider {...settings}>

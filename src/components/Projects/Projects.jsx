@@ -7,6 +7,8 @@ import { useSwiper } from "swiper/react";
 import projects from "./project_data";
 import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
+import { FaGithub } from "react-icons/fa6";
+import { GoArrowUpRight } from "react-icons/go";
 
 const ProjectSliderBtns = () => {
   const swiper = useSwiper();
@@ -31,40 +33,41 @@ export default function Projects(){
   };
   return (
   	<div className="projects-container">
-  		<center><h2 className="intro-title">Projects</h2></center>
-		<p className="intro-paragraph">Below are some of my key skills, categorized into frontend and backend.</p>
-		<div className="project-img">
-			<Swiper className="image-slider" spaceBetween={30} slidesPerView={1} onSlideChange={handleSlideChange}>
-				{projects.map((project, index) => {
-					return (
-						<SwiperSlide className="image-slider2" key={index} style={{ marginBottom: "100px" }}>
-							<img src={project.image} alt="" />
-						</SwiperSlide>
-						);
-				})}
-				<ProjectSliderBtns />
-			</Swiper>
+  		<h2 className="intro-title">Projects</h2>
+			<p className="intro-paragraph">Below are some of my key skills, categorized into frontend and backend.</p>
+			<div className="project-img">
+				<Swiper className="image-slider" spaceBetween={30} slidesPerView={1} onSlideChange={handleSlideChange}>
+					{projects.map((project, index) => {
+						return (
+							<SwiperSlide className="image-slider2" key={index} style={{ marginBottom: "100px" }}>
+								<img src={project.image} alt="" />
+							</SwiperSlide>
+							);
+					})}
+					<ProjectSliderBtns />
+				</Swiper>
 
-			<div className="project-info">
-				<h2 className="heading">Projects</h2>
-				<div className="proj-num">{project.num}</div>
-				<h2 className="proj-category">{project.category} project</h2>
-				<p className="proj-desc">{project.description}</p>
-				<ul className="proj-stack">
-				{project.stack.map((item, index) => {
-					return (
-						<li key={index}>
-						{item.name}
-						{index !== project.stack.length - 1 && ","}
-						</li>
-						);
-				})}
-				</ul>
-				<hr />
-				<button className="link-btn"><a href={project.live} target="_blank">Link</a></button>
-				<button className="link-btn"><a href={project.github} target="_blank">Github</a></button>
-			</div>
-		</div>	
+				<div className="project-info">
+					<h2 className="proj-title">{project.num}. {project.title}</h2>
+					<div className="proj-category">{project.category} Project</div>
+					<p className="proj-desc">{project.description}</p>
+					<ul className="proj-stack">
+					{project.stack.map((item, index) => {
+						return (
+							<li key={index}>
+							{item.name}
+							{index !== project.stack.length - 1 && ""}
+							</li>
+							);
+					})}
+					</ul>
+					<hr />
+					<div className="project-links">
+						<div className="link-btn"><a href={project.live} target="_blank"><GoArrowUpRight /></a></div>
+						<div className="link-btn"><a href={project.github} target="_blank"><FaGithub /></a></div>
+					</div>
+				</div>
+			</div>	
   	</div>
     // <div className="projects-container">
     //   <h2 className="heading">Projects</h2>
