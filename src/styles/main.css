@@ -24,9 +24,10 @@
     --color2: #FCF951FF;
     --color3: #FCF951FF;*/
 
-    --bgimage1: url(../assets/bg-image1.jpg);
-/*    --bgimage1: url(../assets/bg-image2.jpg);*/
+    --bgimage1: url(../assets/sm-bg-image1.jpg);
+    --bgimage2: url(../assets/sm-bg-image2.jpg);
 
+    --bgimage: var(--bgimage1);
 
     --width-sidebar: 240px;
     --width-sidebar-deactivated: 78px;
@@ -36,7 +37,7 @@ body{
 	position: relative;
 	min-height: 100vh;
 	width: 100%;
-    background-image: var(--bgimage1);
+    background-image: var(--bgimage);
     background-color: var(--color1);
 
 }
