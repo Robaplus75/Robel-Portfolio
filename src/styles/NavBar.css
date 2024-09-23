@@ -363,12 +363,14 @@
 		left: 0;
 		width: 100%;
 		top: var(--width-sidebar-deactivated);
+		top: 0;
 		transition: all 0.5s ease;
 		z-index: 0;
 	}
 	.sidebar.active ~ .nav-Content{
 		width: 100%;
 		top: var(--width-sidebar-deactivated);
+		top: 0;
 		left: 0;
 	}
 

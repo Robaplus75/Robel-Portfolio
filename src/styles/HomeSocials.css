@@ -4,7 +4,6 @@
 	align-items: center;
 	gap: 0.8rem;
 	position: absolute;
-	right: 5%;
 	bottom: 3rem;
 }
 
@@ -43,23 +42,35 @@
 	height: 3rem;
 	background: var(--color3);
 }
+.glass-socials{
+	display: none;
+}
 
 /*------- Small Screen ------*/
 @media screen and (max-width:830px){
 	.home_socials{
+		height: 50px;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
+		justify-content: center;
 		gap: 0.8rem;
 		position: absolute;
-		right: 5%;
-		top: 3rem;
+		top: 0;
+		left: 0%;
+		width: 100%;
 	}
 	.home_socials::after{
 		content: "";
 		width: 0;
 		height: 0;
 		background: var(--color3);
+	}
+	.glass-socials{
+		display: block;
+	}
+	.socials{
+		display: none;
 	}
 	/*.home_socials::before{
 		content: "";

@@ -3,13 +3,16 @@ import CV from '../../assets/kakashi.jpg'
 import '../../styles/Home.css'
 import ME from '../../assets/home-image.png'
 import HomeSocials from "./HomeSocials"
+import Tag from "./Tag"
 
 export default function Home(){
 	return (
 		<div className="home">
 			<div className="glass">
+				<div className="glass-socials">
+					<HomeSocials/>
+				</div>
 				<div className="left">
-					<div className="home-info">
 						<h4 className="text-color-2 greeting">Hello I'm</h4>
 						<h1 className="text-color-2 myname">Robel Wondimu</h1>
 						<h5 className="text-color-2 occupation">Fullstack Developer</h5>
@@ -17,13 +20,10 @@ export default function Home(){
 							<a href={CV} download className="btn">Download CV</a>
 							<a href="#contact" className="btn btn-primary">Let's Talk</a>
 						</div>
-					</div>
 				</div>
-				<div className="right">
-					<div className="me">
-						{/*<img src={ME} alt="me" />*/}
-					</div>
-				</div>
+				{/*<div className="right">
+					
+				</div>*/}
 
 				<div class="custom-shape-divider-bottom-1723142061">
 				    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

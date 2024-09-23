@@ -1,0 +1,1 @@
+curl -X POST https://blackbox.ai/api/converse -H Content-Type: application/json -d {"message": "Hello, how are you?"}

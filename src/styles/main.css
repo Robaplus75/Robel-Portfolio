@@ -43,6 +43,7 @@ body{
 
 .intro-title{
     color: var(--color3);
+    font-size: 2rem;
 
 }
 
@@ -57,7 +58,7 @@ body{
     font-size: 20px;
     font-weight: 600;
     color: white;
-    padding: 14px 0px 15px;
+
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
