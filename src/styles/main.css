@@ -24,8 +24,8 @@
     --color2: #FCF951FF;
     --color3: #FCF951FF;*/
 
-    --bgimage1: url(../assets/sm-bg-image1.jpg);
-    --bgimage2: url(../assets/sm-bg-image2.jpg);
+    --bgimage1: url(/sm-bg-image1.jpg);
+    --bgimage2: url(/sm-bg-image2.jpg);
 
     --bgimage: var(--bgimage1);
 
