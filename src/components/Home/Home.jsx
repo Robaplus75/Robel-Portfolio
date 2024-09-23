@@ -3,7 +3,6 @@ import CV from '../../assets/kakashi.jpg'
 import '../../styles/Home.css'
 import ME from '../../assets/home-image.png'
 import HomeSocials from "./HomeSocials"
-import Tag from "./Tag"
 
 export default function Home(){
 	return (
