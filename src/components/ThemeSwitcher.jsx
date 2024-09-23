@@ -6,13 +6,13 @@ const themes = [
     '--color1': '#00203FFF',
     '--color2': '#ADEFD1FF',
     '--color3': '#ADEFD1FF',
-    '--bgimage1': "url(../assets/bg-image1.jpg)",
+    '--bgimage1': "url(../assets/sm-bg-image1.jpg)",
   },
   {
     '--color1': '#101820FF',
     '--color2': '#FEE715FF',
     '--color3': '#FEE715FF',
-    '--bgimage1': "url(../assets/bg-image2.jpg)",
+    '--bgimage1': "url(../assets/sm-bg-image2.jpg)",
   },
   {
     '--color1': 'black',
