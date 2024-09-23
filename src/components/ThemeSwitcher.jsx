@@ -15,11 +15,6 @@ const themes = [
     '--bgimage1': "url(../assets/bg-image2.jpg)",
   },
   {
-    '--color1': '#422057FF',
-    '--color2': '#FCF951FF',
-    '--color3': '#FCF951FF',
-  },
-  {
     '--color1': 'black',
     '--color2': 'white',
     '--color3': 'white',
