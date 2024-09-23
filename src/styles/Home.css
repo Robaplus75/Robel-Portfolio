@@ -10,8 +10,8 @@
 }
 
 .glass{
-	width: clamp(285px, 85vw,1000px);
-	height: 80%;
+	width: clamp(285px, 80vw,900px);
+	height: 75%;
 	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
