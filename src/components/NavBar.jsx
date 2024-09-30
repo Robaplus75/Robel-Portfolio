@@ -1,8 +1,8 @@
 import "../styles/NavBar.css"
-import ProfileImg from '../assets/kakashi.jpg';
 import { Outlet } from 'react-router-dom'
 import { useState } from 'react'
 import ThemeSwitcher from './ThemeSwitcher'
+import { FaGithub } from "react-icons/fa6";
 
 export default function NavBar(){
 
@@ -85,14 +85,15 @@ export default function NavBar(){
         <div className="profile_content">
           <div className="profile">
             <div className="profile_details">
-              <img src={ProfileImg} alt="" />
               <div className="name_job">
                 <div className="name">Robel Wondimu</div>
                 <div className="job">Web Developer</div>
               </div>
               
             </div>
-            <i className="bx bx-log-out" id="log_out"></i>
+            <a href="https://github.com" id="log_out" target="_blank">
+              <FaGithub className="social-icon" />
+            </a>
           </div>
         </div>
       </div>
