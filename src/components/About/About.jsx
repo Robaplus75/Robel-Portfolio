@@ -12,11 +12,14 @@ export default function(){
 				<h1>About Me</h1>
 				<h2>FullStack Web Developer</h2>
 				<p>
-					If you need a small amount of lorem ipsum, you can copy and paste into your file from this passage:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					I’m an <span>Electrical Engineering</span> student with a knack for full-stack development, focusing on <span>Django</span> and <span>React</span>. I enjoy tackling challenges and creating impactful web applications.	
 				</p>
-				<p>
-					If you need a small amount of lorem ipsum, you can copy and paste into your file from this passage:Lorem ipsum dolor sit amet, consectetur adipiscing.
-				</p>
+				<div>
+				<h3 className="education">Education</h3>
+				<p>12 Month ALX Software Engineering</p>
+				<p>AASTU Electrical Engineering</p>
+				
+				</div>
 				<div className="personalInfo">
 						<div><span>Name:</span><span>Robel Wondimu</span></div>
 						<div><span>Age:</span><span>23 Years</span></div>
