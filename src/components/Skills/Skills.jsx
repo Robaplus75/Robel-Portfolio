@@ -38,6 +38,26 @@ export default function Skills(){
 		      { status: "Good", name: "Bootstrap" },
 		    ],
 		  },
+		  {
+		    icon: <i class='bx bxl-django'></i>,
+		    title: "DJANGO",
+		    description: "",
+		    bars: [
+		      { status: "Excellent", name: "Rest APIs" },
+		      { status: "Good", name: "JWT Auths" },
+		      { status: "Excellent", name: "Django's ORM" },
+		    ]
+		  },
+		  {
+		    icon: <i className='bx bxl-flask' />,
+		    title: "Flask",
+		    description: "",
+		    bars: [
+		      { status: "Excellent", name: "CRUD" },
+		      { status: "Fair", name: "Session Auths" },
+		      { status: "Good", name: "SQLAlchemy ORM" },
+		    ],
+		  },
 		];
 
 	const backend_skills = [
@@ -67,9 +87,28 @@ export default function Skills(){
 		dots: false,
 		infinite:false,
 		speed: 300,
-		slidesToShow:1,
+		slidesToShow:3,
 		slidesToScroll:1,
-		
+		responsive: [
+		    {
+		      breakpoint: 620, // small devices (e.g., mobile phones)
+		      settings: {
+		        slidesToShow: 1,
+		      },
+		    },
+		    {
+		      breakpoint: 1000, // medium devices (e.g., tablets)
+		      settings: {
+		        slidesToShow: 2,
+		      },
+		    },
+		    {
+		      breakpoint: 1000, // bigger devices (e.g., laptops)
+		      settings: {
+		        slidesToShow: 3,
+		      },
+		    },
+		  ],
 	};
 
 
@@ -79,7 +118,7 @@ export default function Skills(){
 			<p className="intro-paragraph">Below are some of my key skills, categorized into frontend and backend.</p>
 			<div className="skills-list">
 				<div className="frontend-skills">
-					<div className="skills-title">My Frontend Skills</div>
+					<div className="skills-title">Frontend Skills</div>
 
 					<div className="skills-container">
 					<Slider {...settings}>
@@ -98,8 +137,8 @@ export default function Skills(){
 				</div>
 
 	{/*----------------Backend Skills -------------*/}
-				<div className="backend-skills">
-					<div className="skills-title">My Backend Skills</div>
+				{/*<div className="backend-skills">
+					<div className="skills-title">Backend Skills</div>
 
 					<div className="skills-container">
 					<Slider {...settings}>
@@ -114,10 +153,10 @@ export default function Skills(){
 					  ))}
 					</Slider>
 					</div>
-				</div>
+				</div>*/}
 	{/*----------------Backend Skills -------------*/}
-				<div className="devops-skills">
-					<center><div className="skills-title">My Backend Skills</div></center>
+				{/*<div className="devops-skills">
+					<center><div className="skills-title">Backend Skills</div></center>
 
 					<div className="skills-container">
 					<Slider {...settings}>
@@ -132,7 +171,7 @@ export default function Skills(){
 					  ))}
 					</Slider>
 					</div>
-				</div>
+				</div>*/}
 			</div>
 
 

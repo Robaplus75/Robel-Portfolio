@@ -83,8 +83,9 @@
 .skills .frontend-skills{
 	margin: 0;
 	grid-column: 2/-2;
-	width: clamp(12.55rem, 81vw, 18.5rem);
-
+/*	width: clamp(12.55rem, 81vw, 18.5rem);*/
+	width: 100%;
+	max-width: 1005px;
 }
 
 .skills .backend-skills{

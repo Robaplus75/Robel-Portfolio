@@ -222,6 +222,8 @@
 	z-index: 0;
 	display: flex;
 	justify-content: center;
+	max-height: 100vh;
+	overflow: scroll;
 }
 
 .sidebar.active ~ .nav-Content{

@@ -3,6 +3,12 @@ import { useState } from 'react'
 
 const themes = [
   {
+    '--color1': '#112935', 
+    '--color2': '#ADEFD1FF',
+    '--color3': '#ADEFD1FF',
+    '--bgimage': "url(/sm-bg-image6.jpg)",
+  },
+  {
     '--color1': '#00203FFF',
     '--color2': '#ADEFD1FF',
     '--color3': '#ADEFD1FF',
