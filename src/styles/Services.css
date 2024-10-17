@@ -222,6 +222,33 @@
     margin-bottom: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+
+}
+
+@media (max-width: 700px) {
+  .service-cards .service-card {
+    height: auto !important;
+  }
+  .service-card-title{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .service-content{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+
+  }
+  .service-card-image{
+    height: 150px;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 

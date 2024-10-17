@@ -118,7 +118,7 @@ export default function Skills(){
 			<p className="intro-paragraph">Below are some of my key skills, categorized into frontend and backend.</p>
 			<div className="skills-list">
 				<div className="frontend-skills">
-					<div className="skills-title">Frontend Skills</div>
+					{/*<div className="skills-title">Frontend Skills</div>*/}
 
 					<div className="skills-container">
 					<Slider {...settings}>
